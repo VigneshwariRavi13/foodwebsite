@@ -39,7 +39,7 @@ const Login = () => {
         <Typography variant='h5'>Sign In</Typography>
         <TextField id="outlined-basic" label="Email" variant="outlined" name='email' onChange={handleChange} fullWidth />
         <TextField id="outlined-basic" label="Password" variant="outlined" name='password' type="password" onChange={handleChange} fullWidth />
-        <Button sx={{ backgroundColor: 'red' }} onClick={handleLogin} variant="contained">Login</Button>
+        <Button href='/home' sx={{ backgroundColor: 'red' }} onClick={handleLogin} variant="contained">Login</Button>
         {error && <Typography color='error'>{error}</Typography>}
         <a href='/register' style={{ color: 'black' }}>Don't have an account? Register</a>
       </Paper>
