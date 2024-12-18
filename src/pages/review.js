@@ -79,7 +79,7 @@ const Review = () =>{
                 <SearchIconWrapper className="search-icon-wrapper"> 
                   <SearchIcon /> 
                   </SearchIconWrapper> 
-                  <StyledInputBase placeholder="Search…" inputProps={{ 'aria-label': 'search' }} className="styled-input-base" />
+                  <StyledInputBase placeholder="Search…"  className="styled-input-base" />
                    </Search>
                     <Button variant="contained" color="error" href="/login" className="logout-btn"> Logout </Button> 
                     </Toolbar> 
@@ -166,7 +166,7 @@ const Review = () =>{
                 </div>
 
                 <div class="review_text">
-                    <h2 class="name">Jenny</h2>
+                    <h2 class="name">Jackson</h2>
 
                     <div class="review_icon">
                     <FontAwesomeIcon icon={faStar} />

@@ -5,7 +5,7 @@ import { Typography, TextField, Button } from '@mui/material';
 import axios from 'axios';
 
 const Login = () => {
-  const [user, setUser] = useState({ email: '', password: '' });
+  const [user, setUser] = useState({ email: 'admin@gmail.com', password: 'admin' });
   const [error, setError] = useState('');
 
   const handleChange = (event) => {
@@ -19,15 +19,15 @@ const Login = () => {
       return;
     }
     
-    axios.post('http://localhost:3001/login', JSON.stringify(user), {
+    axios.post('http://localhost:3001/login', JSON.stringify(user), { 
       headers: { 'Content-Type': 'application/json' },
     })
-    .then((res) => {
-      console.log(res.data);
-      setError(''); // Clear error on successful login
+    .then((res) => { // to handle asynchronous operation
+      console.log(res.data); // success
+      setError('Successful'); // Clear error on successful login
       // Perform navigation or any other action here
     })
-    .catch((err) => {
+    .catch((err) => { //failed
       console.log(err);
       setError('Login failed');
     });

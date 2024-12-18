@@ -67,18 +67,22 @@
       
       .menu-item .item-info {
         text-align: center;
+        padding: 25px;
       }
       
       .menu-item .item-info h2 {
         color: #FFCC00;
+        margin-bottom: 10px;
       }
       
       .menu-item .item-info p {
         color: black;
+        margin-bottom: 10px;
       }
       
       .menu-item .item-info h3 {
         color: black;
+        margin-bottom: 10px;
       }
       
       .menu-item .item-info .rating {
